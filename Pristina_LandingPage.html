@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Senographe_Pristina</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="" />
+
+    <!-- Favicon icon -->
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!-- fontawesome icon -->
+    
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- vendor css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <style type="text/css">
+	@font-face{ 
+			font-family: 'GEInspiraSans-Regular';
+			src: url('https://gehc.landingbox.net/landingpage/medschool-us-benefits-en-anz-lp1/fonts/GEInspiraSans/GEInspiraSans-Regular.eot'); /* IE9 Compat Modes */
+			src: url('https://gehc.landingbox.net/landingpage/medschool-us-benefits-en-anz-lp1/fonts/GEInspiraSans/GEInspiraSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('https://gehc.landingbox.net/landingpage/medschool-us-benefits-en-anz-lp1/fonts/GEInspiraSans/GEInspiraSans-Regular.woff') format('woff'), /* Modern Browsers */
+				url('https://gehc.landingbox.net/landingpage/medschool-us-benefits-en-anz-lp1/fonts/GEInspiraSans/GEInspiraSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+				url('https://gehc.landingbox.net/landingpage/medschool-us-benefits-en-anz-lp1/fonts/GEInspiraSans/GEInspiraSans-Regular.svg#GEInspiraSans-Bold') format('svg'); /* Legacy iOS */
+			font-style: normal;
+			font-weight: normal;
+			text-rendering: optimizeLegibility;
+			}
+body{font-family: 'GEInspiraSans-Regular',GEInspiraSans !important;font-size:16px;}
+.container{max-width: 1280px;margin: 0 auto;}
+.row1-bnr{background: url(./images/01_Header_BG.jpg) center top no-repeat;background-size: cover;min-height:850px;}
+.row-2{background: url(./images/row2-bg.jpg) center top no-repeat;background-size: cover;}
+.row1-head{width:100%;    float: left;}
+.form-area{color: #000;background: #fff;padding: 10px 20px;border-radius: 10px;}
+.logo{float:left;padding: 20px 0;width:60px;}
+.row1-ctnt{color:#fff;}
+div.footer {background: #fff;color: #63666a;padding-top: 100px;padding-bottom: 50px;font-size: .8em;border-top: 1px solid #dadada; float: left; width: 100%;}
+.footer-row{display: flex;justify-content: space-between;align-items: center;float: left;width: 100%;}
+.social-icons {position: relative;display: flex;justify-content: center;align-items: center;margin: 10px 0;flex-wrap: wrap;}
+.social-icons li a{font-size: 2rem;color: #fff;margin: 0 10px;display: inline-block;}
+.social-icons li{list-style:none;}
+.ftr-top-space{border-bottom: 1px solid #dadada;margin-bottom: 25px;}
+.logo-ftr {
+    float: left;
+    width: 200px;
+}
+.percent-wid{
+	width:110px;
+	padding-bottom:10px;
+}
+.percent-area{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	margin:80px 0;
+}
+.row-2{
+	text-align: center;
+    float: left;
+    width: 100%;
+    padding: 100px 0;
+}
+.row-3 {
+    background: #F3F3F3;
+    padding: 100px 0;
+    float: left;
+    width: 100%;
+}
+.row-2 p{
+	font-size: 40px;
+    color: #005EB8;
+    padding-bottom: 20px;
+}
+.row-4 img{
+	width:100%;
+	padding-bottom: 5px;
+}
+.row-3 h2{color: #005EB8;font-size: 35px;padding-bottom: 25px;}
+.row-3 h4{color: #005EB8;font-size: 25px;}
+.row-3 p{color: #63666A;font-size: 18px;margin-bottom: 25px;}
+.row-4{float:left;width:100%;background:#EDE1E7;padding:100px 0;}
+.row-4 h2{color: #005EB8;font-size: 35px;padding-bottom: 25px;}
+.row4-inner h4{color: #005EB8;
+    font-size: 25px;
+    width: 70%;
+    margin-bottom: 15px;}
+.row4-inner p{
+	color: #63666A;
+    font-size: 14px;
+    margin-bottom: 5px;
+	
+}
+.cntr4-cnt{font-size:16px !important;}
+.row1-ctnt h2{font-size:50px;margin-top: 50px;}
+.row1-ctnt p{font-size:24px;}
+.row1-ctnt img{margin-top: 20px;}
+.carousel-control-prev-icon {
+   background-image: url(./images/22_Slider_Left-Arrow.png);
+    height: 30px;
+	width:30px;
+}
+.carousel-control-next-icon {
+    background-image: url(./images/23_Slider_Right-Arrow.png);
+	 height: 30px;
+	 width:30px;
+}
+.carousel-inner {
+    position: relative;
+    width: 72%;
+    margin: 0 91px;
+    overflow: hidden;
+	border: 1px solid #63666A;
+}
+.carousel-indicators li {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: #F3F3F3;
+}
+.carousel-indicators .active {
+    background-color: #005DB7;
+}
+.carousel-indicators{bottom: -50px;}
+.carousel-control-next, .carousel-control-prev{opacity:1.5;}
+.row-5{
+	background: #fff;
+    float: left;
+    width: 100%;
+    padding: 100px 0;
+}
+.row-5 h2{
+	color: #005EB8;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.row-5 h5{
+	color: #005EB8;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.row-5 ul{color: #63666A;
+    font-size: 16px;}
+.row-5 p{
+	color: #63666A;
+    font-size: 18px;
+	padding-bottom:10px;
+}
+.row-5 img{width:100%;}
+.row-6{
+	float: left;
+    width: 100%;
+    background: #F3F3F3;
+    padding: 100px 0;
+	color: #63666A;
+}
+.row-6 h2{
+	color: #005EB8;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.row-6 h5{
+	color: #005EB8;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.row6-inner-btm img{
+	width:70px;
+}
+.row6-inner-btm{
+	text-align: center;
+    margin-top: 65px;
+}
+.row6-inner-btm p{
+	line-height: 16px;
+    padding: 10px 0;
+    font-size: 15px;
+}
+.row6-right p{
+	font-size:14px;
+	padding-top: 10px;
+}
+.footer-bluepart {
+    background: #005DB7;
+    color: #fff;
+   text-align:center;
+    padding: 50px 0;
+	margin: 80px 0;
+	float: left;
+    width: 100%;
+}
+.footer-bluepart p{
+	font-size:26px;
+}
+.footer-bluepart a {
+    color: #005DB7;
+    background: #fff;
+    font-size: 26px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 0 15px;
+	text-decoration: none;
+}
+.footer-points{
+	width:100%;
+	float: left;
+}
+.row6resp{
+	font-size: 18px;padding-bottom: 20px;
+}
+.row3-innercnt{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 100%;
+}
+.row3-innercnt1{width: 50%;padding: 0 10px;}
+.row3-innercnt2{width: 20%;padding: 0 10px;}
+.row3-innercnt3{width: 30%;padding: 0 10px;}
+.rtline{border-right:2px solid #fff;height:100%;}
+.Dgtl-Mammo{padding-bottom:60px !important;}
+.r6rightinr{padding-left:145px;}
+.productimg6{width:100%;}
+.row6btm-flx{display:flex;align-items: center;justify-content: center;}.row6btm-flx-inr{padding: 0 20px;}
+@media only screen and (min-width: 0px) and (max-width:359px){
+	.form-area{margin-bottom:10px;}.row1-ctnt h2 {font-size: 32px;}.row1-ctnt p {font-size: 16px;}.row1-ctnt img{width:100%;}.row-2 p {font-size: 17px;}
+	.row-2 img{width:100%;}.row-2{padding:50px 0;}.row-3 h2{font-size:26px;}.row-3 h4{font-size: 22px;}.row-3{padding:50px 0;}.row-4 h2{font-size: 26px;}
+	.row4-inner h4{font-size: 22px;width: 100%;margin-top: 20px;}.row-4{padding:50px 0;}.row-5 h2{font-size: 26px;}.row-5 h5{font-size:20px;}.carousel-inner{margin: 0 40px;}
+	.row-5{padding:50px 0;}.row-6 h2{font-size: 26px;}.row-6 h5{font-size:20px;}.productimg6{width:60%;}.row6-inner-btm img {width: 50px;}.row6-inner-btm p{font-size:14px;}
+	.row6btm-flx-inr {padding: 0 6px;}.row6-right img{width:100%;}.r6rightinr{padding-left:0px;}.row-6{padding:50px 0;}.footer-points ol{padding-left:0px;}
+	div.footer{padding-top:50px;}.footer-bluepart{margin: 50px 0;}.footer-bluepart p {font-size: 18px;}.footer-bluepart a{font-size:15px;}.logo-ftr {width: 125px;}
+	.percent-area{margin:0;}.productimg6-mn{display:flex;align-items:center;justify-content:center;}.Dgtl-Mammo{padding-bottom:30px !important;}
+	.r6rightinr-img{display:flex;align-items:center;justify-content:center;}.ProFound-AI{width:70% !important;}.cntr4-cnt{padding-bottom: 10px !important;}
+	.row6-inner-btm {margin-top: 30px;}.row6resp{padding-bottom:0;}.rtline{border-right:0;}
+	.row3-innercnt{
+    flex-direction: column;
+}
+.row3-innercnt1{width: 100%;padding: 0 10px;}
+.row3-innercnt2{width: 100%;padding: 0 10px;}
+.row3-innercnt3{width:100%;padding: 0 10px;}
+}
+@media only screen and (min-width: 360px) and (max-width:767px){
+	.form-area{margin-bottom:10px;}.row1-ctnt h2 {font-size: 32px;}.row1-ctnt p {font-size: 16px;}.row1-ctnt img{width:100%;}.row-2 p {font-size: 17px;}
+	.row-2 img{width:100%;}.row-2{padding:50px 0;}.row-3 h2{font-size:26px;}.row-3 h4{font-size: 22px;}.row-3{padding:50px 0;}.row-4 h2{font-size: 26px;}
+	.row4-inner h4{font-size: 22px;width: 100%;margin-top: 20px;}.row-4{padding:50px 0;}.row-5 h2{font-size: 26px;}.row-5 h5{font-size:20px;}.carousel-inner{margin: 0 60px;}
+	.row-5{padding:50px 0;}.row-6 h2{font-size: 26px;}.row-6 h5{font-size:20px;}.productimg6{width:60%;}.row6-inner-btm img {width: 50px;}.row6-inner-btm p{font-size:14px;}
+	.row6btm-flx-inr {padding: 0 6px;}.row6-right img{width:100%;}.r6rightinr{padding-left:0px;}.row-6{padding:50px 0;}.footer-points ol{padding-left:0px;}
+	div.footer{padding-top:50px;}.footer-bluepart{margin: 50px 0;}.footer-bluepart p {font-size: 18px;}.footer-bluepart a{font-size:15px;}.logo-ftr {width: 125px;}
+	.percent-area{margin:0;}.productimg6-mn{display:flex;align-items:center;justify-content:center;}.Dgtl-Mammo{padding-bottom:30px !important;}
+	.r6rightinr-img{display:flex;align-items:center;justify-content:center;}.ProFound-AI{width:70% !important;}.cntr4-cnt{padding-bottom: 10px !important;}
+	.row6-inner-btm {margin-top: 30px;}.row6resp{padding-bottom:0;}.rtline{border-right:0;}
+	.row3-innercnt{
+    flex-direction: column;
+}
+.row3-innercnt1{width: 100%;padding: 0 10px;}
+.row3-innercnt2{width: 100%;padding: 0 10px;}
+.row3-innercnt3{width:100%;padding: 0 10px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+	.row-2 p {font-size: 33px;}.row-2 img{width:100%;}.rtline{height:auto;}
+	.row3-innercnt{
+    flex-direction: column;
+}
+.row3-innercnt1{width: 100%;padding: 0 10px;}
+.row3-innercnt2{width: 100%;padding: 0 10px;}
+.row3-innercnt3{width:100%;padding: 0 10px;}
+.productimg6-mn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productimg6 {
+    width: 35%;
+}
+.percent-area{margin:0;}.carousel-inner{margin:0 50px;}.r6rightinr {padding-left: 0;}.row6-right img{width:100%;}.row6-inner-btm img {width: 55px;}
+.row6-right{margin-top:75px;}
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait){
+	.row-2 img{width:100%;}.rtline{height:auto;}.carousel-inner{margin:0 65px;}.row6-right img{width:100%;}
+}
+	
+	
+
+/* Scroll */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  background:#fff ; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+background: #005DB7; 
+}
+/* Scroll end */
+   </style>
+	  
+</head>
+
+<body>
+		
+		<!-- section1 start	 -->
+		<div class="row1-bnr">
+			<div class="container">
+				<div class="row1-head">
+					<img src="images/0_Top-Logo.png" class="logo"/>	
+				</div>
+				<div class="row1-ctnt">
+				<div class="row">
+					<div class="col-md-8">
+						<h2>Senographe Pristina™</h2>
+						<p>Choose the mammography system <span style="font-weight:bold;">83% of<br> patients say was a better experience.</span></p>
+						<img src="images/02_Header-Product.png">
+					</div>
+					<div class="col-md-4">
+						<div class="form-area">
+							Thank you for your interest in Senographe Pristina™! Please give us your details and 
+							we will have our representatives reach out to you.
+						</div>
+					</div>
+				</div>
+				</div>
+				</div>
+		</div>
+		<div class="row-2">
+		<div class="container">
+			<p>Reshape the mammography experience with comfort, confidence and clarity</p>
+			<a href="#"><img src="images/03_Video.jpg"></a>
+		</div>
+		</div>
+		<div class="row-3">
+		<div class="container">
+			<div class="row3-innercnt">
+				<div class="row3-innercnt1">
+				<h2>Reshape the Mammography experience<br>
+with a sensitive design.</h2>
+					
+						
+							
+							<h4>Comfort for patients</h4>
+							<p>Every woman is unique. Design can make a difference to better deal with
+challenging patients. The new, inviting gantry with elegant lighting and
+gentle, rounded shapes promotes a sense of calm.</p>
+							<h4>Confidence for technologists</h4>
+							<p>Poor positioning has been found to be the cause of most clinical imagedeficiencies and most failures of accreditation1. Technologist comfort is
+intimately linked to the patient’s one. The ergonomic design of Pristina
+eases patient positioning and improves the overall mammography
+experience for both patients and technologists.</p>
+						
+						
+					
+					
+						
+							<h4>Clarity for Radiologists</h4>
+							<p>Superior diagnostic accuracy2 at the lowest patient dose of all FDAapproved digital breast tomosynthesis (DBT) systems3.</p>
+							<p>Senographe Pristina sets the bar high for diagnostic confidence and
+performance, leveraging the Senographe family’s widely recognized
+image quality. The Senographe Pristina platform is upgradeable to
+advanced applications.</p>
+						
+					
+				</div>
+				<div class="row3-innercnt2">
+					<div class="percent-area">
+							<img src="images/04_83pc.png" class="percent-wid">
+							<p>Had a more positive experience on Senographe Pristina compared to previous exams4</p>
+						</div>
+						<div class="percent-area">
+							<img src="images/05_96pc.png" class="percent-wid">
+							<p>Of technologists report thatSenographe Pristinawas easy to use</p>
+						</div>
+				</div>
+				<div class="row3-innercnt3">
+				<div class="productimg6-mn">
+					<img src="images/06_Product_Img.png" class="productimg6">
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="row-4">
+			<div class="container">
+				<h2>Senographe Pristina™ 3D <br>Superior Diagnostic Accuracy</h2>
+				<div class="row4-inner">
+					<div class="row">
+						<div class="col-md-3 rtline">
+							<p>Digital<br> Mammography</p>
+							<img src="images/07_Dgtl-Mammo.png"  class="Dgtl-Mammo"/>
+							<p>Digital Breast <br>Tomosynthesis</p>
+							<img src="images/08_Dgtl-Brst-Tomo.png"/>
+						</div>
+						<div class="col-md-6">
+							<h4>Tomosynthesis and synthetic 2D images,
+							a 3D dose-equivalent solution for screening
+							mammography</h4>
+							<p class="cntr4-cnt" style="padding-bottom:35px;">Digital Breast Tomosynthesis (DBT) is a three-dimensional (3D) imaging
+							technology that uses a low-dose limited angle X-ray sweep around
+							compressed breasts to produce 3D images that reduce image quality
+							issues associated with overlapping structures (superimposition), a
+							limitation in standard two-dimensional (2D) mammography.</p>
+							<p class="cntr4-cnt" style="padding-bottom:20px;">Breast cancer detection randomized trial on tomosynthesis -Reggio Emilia5: 2D + 3D mammography for finding breast cancer compared to 2D mammography alone</p>
+							<img src="images/11_Diagram.png"/>
+						</div>
+						<div class="col-md-3">
+							<img src="images/09_FFDM.png"/>
+							<p>FFDM (left) and V-Preview 4.1 (right) for same patient</p>
+							<img src="images/10_9-Projections.jpg"/>
+							<p>9 projections over 25° has been chosen to
+							preserve the visibility of small objects and
+							tissue depth separation.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Senographe Pristina design</h2>
+						<h5>An attractive and well-designed gantry.</h5>
+						<p>Senographe Pristina mammography system is more inviting and
+						more comfortable resulting in a better overall breast exam
+						experience. It was designed to ease anxiety when the patient
+						enters the exam room.</p>
+						<ul>
+						  <li>The new, inviting gantry promotes a sense of calm, with elegantlighting and gentle, rounded shapes.</li>
+						  <li>A soft-curved surface invites patients into a space of comfort andsupport.</li>
+						  <li>The nice shapes and colors provide a sensation of calm, reduce patient anxiety and make the examination a more positive experience.6</li>
+						  <li>Bucky thinness allows the better positionning of the patient on the breast support.</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<div id="carousel-1" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-1" data-slide-to="1"></li>
+						<li data-target="#carousel-1" data-slide-to="2"></li>
+						<li data-target="#carousel-1" data-slide-to="3"></li>
+					</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+							   <img src="images/12_SP-Design_Slide01.jpg"/>
+							</div>
+							<div class="carousel-item">
+							   <img src="images/13_SP-Design_Slide02.jpg"/>
+							</div>
+							<div class="carousel-item">
+							   <img src="images/14_SP-Design_Slide03.jpg"/>
+							</div>
+							 <div class="carousel-item">
+								<img src="images/15_SP-Design_Slide04.jpg"/>
+							</div>
+						</div>
+						<a class="carousel-control-prev d-none" href="#carousel-1" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next " href="#carousel-1" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-6">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>ProFound™ AI by ICAD</h2>
+						<h5>Address the challenge of reading an increasing amount of cases.</h5>
+						<p class="row6resp">Reading tomosynthesis cases means being able to accurately interpret extensive amounts of data.</p>
+						<p>Deep learning based ProFound™ AI is changing the paradigm by offering
+						radiologists the possibility to address the challenges of reading an increasing
+						amount of tomosynthesis cases with a high-performing, concurrent-read,
+						workflow solution that rapidly and accurately analyzes each tomosynthesis
+						plane, detecting both malignant soft tissue densities and calcifications with
+						exceptional accuracy.</p>
+						<ul style="padding-top: 10px;">
+							<li>Integrated with Seno Iris.</li>
+							<li>ProFound AI displays case scores in the worklist.</li>
+							<li>The Case Score represents how confident the algorithm is that a case is malignant, taking into account all detections in the case.</li>
+						</ul>
+						<div class="row6-inner-btm">
+						<div class="row6btm-flx">
+							<div class="row6btm-flx-inr">
+								<img src="images/18_Icon01-Reduce.png"/>
+								<p>Reduce<br> reading time</p>
+							</div>
+							<div class="row6btm-flx-inr">
+								<img src="images/19-20_Icon02-03-Increase.png"/>
+								<p>Increase<br> sensitivity</p>
+							</div>
+							<div class="row6btm-flx-inr">
+								<img src="images/19-20_Icon02-03-Increase.png"/>
+								<p>Increase<br> specificity</p>
+							</div>
+							<div class="row6btm-flx-inr">
+								<img src="images/21_Icon04-Reduce.png"/>
+								<p>Reduce<br> recalls</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+					<div class="row6-right">
+						<img src="images/16_ProFound-Seamless.png"/>
+						<div class="r6rightinr">
+						<p>Seamless integration with Seno™ Iris: ProFound AI displays a case scores in the worklist</p>
+						<div class="r6rightinr-img"><img src="images/17_ProFound-AI.jpg" class="ProFound-AI"/></div>
+						<p>ProFound AI detect both malignant soft tissue densities and calcifications
+						with exceptional accuracy findings are marked on the 2D synthetized view,
+						on the slabs and on the planes of interest</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section1 end	 -->
+		<!-- section7 end	 -->
+		<div class="footer">
+    		<div class="container">
+			<div class="footer-points">
+				<ol>
+					<li> U.S.Food and Drug Administration http://www.fda.gov/Radiation. EmittingProducts/MammographyQualityStandards ActandProgram/FacilityScorecard/ucm495378.htm</li>
+					<li> Superior diagnostic accuracy demonstrated in a reader study comparing the ROC AUC of GE screening protocol (V-Preview + 3D CC/MLO with 3D in STD mode) to that of 2D FFDM alone.
+						V-Preview is the 2D synthesized image generated by GE Seno Iris mammography software from GE DBT images. FDA PMA P130020 http://www.accessdata.fda.gov/scripts/cdrh/cfdocs/
+						cfpma/pma.cfm?id=P130020.</li>
+					<li>Comparison of patient dose delivered by FDA approved DBT devices as of February 2018 for a breast of average density, based on data presented in [1-2] and data on file. Device comparison
+					includes GE SenoClaire, GE Senographe Pristina 3D in STD mode, Hologic Selenia Dimensions, Siemens Mammomat Inspiration, Fuji Aspire Cristalle [1. Bouwman, R. W. and al., et.
+					2015, Physics in Medicine & Biology, pp. 7893-7907; 2. NHSBSP Equipment Reports 1306, 1404, 1307, and on Fujifilm AMULET Innovality.]
+					</li>
+					<li>IPSOS Patient Satisfaction Study sponsored by GE Healthcare, conducted with 315 patients across 2 sites in Europe, February 2017</li>
+					<li>Digital Mammography versus Digital Mammography plus tomosynthesis for Breast Cancer Screening: The Reggio Emilia Tomosynthesis Randomized Trial.https://doi.org/10.1148/radiol.20181721</li>
+					<li> 1 IPSOS Patient Satisfaction Study sponsored by GE Healthcare, conducted with 315 patients across 2 sites in Europe, February 2017</li>
+				</ol>
+			</div>	
+				<div class="footer-bluepart">
+					<p>Please visit the website to learn more or download the full brochure today.</p>
+					<a href="#">Website</a>
+					<a href="#">Brochure</a>
+				</div>
+    				<div class="footer-row">
+	    				<div class="ftr-left">
+    						<img class="logo-ftr" src="images/24_Bottom-Logo.png" alt="GE">
+	    				</div>
+	    				
+	    				<div class="ftr-right">
+    						<ul class="social-icons">
+    							<li>
+    								<a href="https://www.facebook.com/GEHealthcare/" target="_blank">
+    									<img src="images/fb.png" alt="fb">
+    								</a>
+    							</li>
+    							<li>
+    								<a href="https://twitter.com/gehealthcare" target="_blank" >
+    									<img src="images/tw.png" alt="tw">
+    								</a>
+    							</li>
+    							<li>
+    								<a href="https://www.linkedin.com/company/gehealthcare" target="_blank">
+    									<img src="images/in.png" alt="in">
+    								</a>
+    							</li>
+    						</ul>
+	    				</div>
+    				</div>
+				<div class="ftr-top-space"> &nbsp </div>
+				<div class="ftr-end">
+	    					<p style="text-align: center;">©2022 General Electric Company – All rights reserved. GE, GE Monogram and Senographe Pristina are trademarks of General Electric Company.</p>
+				</div>
+    		</div>
+    	</div>
+      <!-- Required Js -->
+	   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+	  
+	  <script>
+		$('#carousel-1').carousel({
+    interval: 5000,
+	ride:true,
+    wrap: true
+}).on('slide.bs.carousel', function (e) {
+    // First one
+    if (e.to == 0) {
+        $('.carousel-control-prev').addClass('d-none');
+        $('.carousel-control-next').removeClass('d-none');
+    } // Last one
+    else if (e.to == 3) {
+        $('.carousel-control-prev').removeClass('d-none');
+        $('.carousel-control-next').addClass('d-none');
+    } // The rest
+	else {
+        $('.carousel-control-prev').removeClass('d-none');
+        $('.carousel-control-next').removeClass('d-none');
+    }
+	 // First one
+});
+	  </script>
+</body>
+
+</html>
